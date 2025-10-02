@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %} {% endblock title %} </title>
+       
+       
+   
+</head>
+<body>
+    {% include 'partitions/_header.html' %}
+    {% include 'partitions/_pagination.html' %}
+    {% block body %}
+    {% endblock body %}
+    {% include 'partitions/_footer.html' %}
+</body>
+</html>
